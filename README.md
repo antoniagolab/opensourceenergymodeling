@@ -1,0 +1,2 @@
+# opensourceenergymodeling
+First homework assignement
