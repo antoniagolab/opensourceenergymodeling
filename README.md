@@ -1,4 +1,4 @@
-# HW Assignement 1 - Open Source Energy System Modeling
+# HW Assignment 1 - Open Source Energy System Modeling
 
 ## Licence
 Copyright (c) 2021 Antonia Golab
@@ -7,3 +7,8 @@ Copyright (c) 2021 Antonia Golab
 
 
 ## Overview
+This project encompasses two basic geometrical functions which determine points with extreme positions given point accumulations lying in a right-handed two-dimensional coordinate system:
+
+`getleftmostPoint()`: returns point lying leftmost in relation to all given points
+
+`getrightmostPoint()`: returns point lying rightmost in relation to all given points
