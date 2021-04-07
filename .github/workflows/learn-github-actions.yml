@@ -1,10 +1,29 @@
 name: learn-github-actions
-on: [push]
+on: 
+    push: 
+        branches: [main]
+    
+    pull_request:
+        branches: [main]
+        
+        
 jobs:
-  check-bats-version:
+  build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
-      - run: npm install -g bats
-      - run: bats -v
+
+      - name: Set up Python 3.8
+        uses: actions/setup-node@v1
+        with:
+            python-version: 3.8
+            
+      - name: Install pytest
+        run: pip install pytest
+       
+      - name: Install pytest
+        run: pip install numpy
+        
+      
+      - name: Test with pytest
+        run: pytest
