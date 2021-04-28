@@ -20,7 +20,7 @@ def getleftmostPoint(listofpoints):
     :return: Point with smallest xCoord-value
     """
     xs = [p.xCoord for p in listofpoints]
-    min_indx = np.argmin(xs)
+    min_indx = np.argmin(xs) 
     return listofpoints[min_indx]
 
 
