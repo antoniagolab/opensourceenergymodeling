@@ -7,7 +7,7 @@ def test_getleftmostPoint():
     """ Testing getleftmostPoint() """
     point_list = [Point(1, 1), Point(3, 2), Point(4, 5)]
     leftmostPoint = getleftmostPoint(point_list)
-    assert leftmostPoint.xCoord == 1 and leftmostPoint.yCoord == 1
+    assert leftmostPoint.xCoord == 2 and leftmostPoint.yCoord == 1
 
 
 def test_getrightmostPoint():
