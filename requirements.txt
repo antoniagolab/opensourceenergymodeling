@@ -1,2 +1,2 @@
-numpy==1.19.3
-pytest==2.9.1
+numpy
+pytest
